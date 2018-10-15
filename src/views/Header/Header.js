@@ -573,7 +573,7 @@ let platformContainerStyles;
 //   };
 // }
 
-const DEFAULT_BACKGROUND_COLOR = Platform.OS === 'ios' ? '#F7F7F7' : '#FFF';
+const DEFAULT_BACKGROUND_COLOR = '#F7F7F7';
 
 const styles = StyleSheet.create({
   container: {
@@ -623,7 +623,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignItems: 'center',
     flexDirection: 'row',
-    justifyContent: Platform.OS === 'ios' ? 'center' : 'flex-start',
+    justifyContent: 'center',
   },
   left: {
     left: 0,
