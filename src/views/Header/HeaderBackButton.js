@@ -126,27 +126,24 @@ const styles = StyleSheet.create({
   icon:
     Platform.OS === 'ios'
       ? {
-          height: 21,
-          width: 13,
-          marginLeft: 9,
-          marginRight: 22,
-          marginVertical: 12,
-          resizeMode: 'contain',
-          transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
-        }
+        height: 21,
+        width: 13,
+        marginLeft: 9,
+        marginRight: 22,
+        marginVertical: 12,
+        resizeMode: 'contain',
+        transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
+      }
       : {
-          height: 24,
-          width: 24,
-          margin: 16,
-          resizeMode: 'contain',
-          transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
-        },
-  iconWithTitle:
-    Platform.OS === 'ios'
-      ? {
-          marginRight: 6,
-        }
-      : {},
+        height: 24,
+        width: 24,
+        margin: 10,
+        resizeMode: 'contain',
+        transform: [{ scaleX: I18nManager.isRTL ? -1 : 1 }],
+      },
+  iconWithTitle: {
+    marginRight: 6,
+  },
 });
 
 export default HeaderBackButton;

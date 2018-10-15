@@ -19,16 +19,14 @@ import ModularHeaderBackButton from './ModularHeaderBackButton';
 import HeaderStyleInterpolator from './HeaderStyleInterpolator';
 import withOrientation from '../withOrientation';
 
-const APPBAR_HEIGHT = Platform.OS === 'ios' ? 44 : 56;
-const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 20 : 0;
-const TITLE_OFFSET = Platform.OS === 'ios' ? 70 : 56;
+const APPBAR_HEIGHT = 44;
+const STATUSBAR_HEIGHT = 20;
+const TITLE_OFFSET = 70;
 
 const getAppBarHeight = isLandscape => {
-  return Platform.OS === 'ios'
-    ? isLandscape && !Platform.isPad
-      ? 32
-      : 44
-    : 56;
+  return isLandscape && !Platform.isPad
+    ? 32
+    : 44;
 };
 
 class Header extends React.PureComponent {
@@ -250,11 +248,16 @@ class Header extends React.PureComponent {
     const { transitionPreset } = this.props;
 
     if (Platform.OS === 'android') {
-      if (!options.hasLeftComponent) {
+      if (!options.hasLeftComponent && !options.hasRightComponent) {
         style.left = 0;
-      }
-      if (!options.hasRightComponent) {
         style.right = 0;
+      } else {
+        if (!options.hasLeftComponent) {
+          style.left = 44;
+        }
+        if (!options.hasRightComponent) {
+          style.right = 44;
+        }
       }
     } else if (
       Platform.OS === 'ios' &&
