@@ -5,35 +5,35 @@
       "/Users/zhanglinfeimacair/workroom/coding/iwos-phone/iwos"
     ]
   ],
-  "_from": "react-navigation@2.6.2",
+  "_from": "git+https://github.com/linfeizhang/react-navigation.git",
   "_id": "react-navigation@2.6.2",
   "_inBundle": false,
   "_integrity": "sha1-qP22nFh2aY9+WMWjlip4uiS7IFg=",
   "_location": "/react-navigation",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "react-navigation@2.6.2",
+    "type": "git",
+    "raw": "react-navigation@git+https://github.com/linfeizhang/react-navigation.git",
     "name": "react-navigation",
     "escapedName": "react-navigation",
-    "rawSpec": "2.6.2",
-    "saveSpec": null,
-    "fetchSpec": "2.6.2"
+    "rawSpec": "git+https://github.com/linfeizhang/react-navigation.git",
+    "saveSpec": "git+https://github.com/linfeizhang/react-navigation.git",
+    "fetchSpec": "https://github.com/linfeizhang/react-navigation.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "http://registry.npm.taobao.org/react-navigation/download/react-navigation-2.6.2.tgz",
-  "_spec": "2.6.2",
-  "_where": "/Users/zhanglinfeimacair/workroom/coding/iwos-phone/iwos",
+  "_resolved": "git+https://github.com/linfeizhang/react-navigation.git#884ba447fe091161ce7ca0d0cc773cec5c8a51d7",
+  "_spec": "react-navigation@git+https://github.com/linfeizhang/react-navigation.git",
+  "_where": "/Volumes/Mac/workroom/coding/smartfleet-user-app",
   "author": {
-    "name": "Adam Miskiewicz",
-    "email": "adam@sk3vy.com"
+    "name": "linfeizhang"
   },
   "bugs": {
     "url": "https://github.com/react-navigation/react-navigation/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "clamp": "^1.0.1",
     "create-react-context": "^0.2.1",
@@ -46,6 +46,7 @@
     "react-navigation-drawer": "0.4.3",
     "react-navigation-tabs": "0.5.1"
   },
+  "deprecated": false,
   "description": "Routing and navigation for your React Native apps",
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -74,7 +75,7 @@
   "files": [
     "src"
   ],
-  "homepage": "https://github.com/react-navigation/react-navigation#readme",
+  "homepage": "https://github.com/linfeizhang/react-navigation#readme",
   "jest": {
     "notify": true,
     "preset": "react-native",
